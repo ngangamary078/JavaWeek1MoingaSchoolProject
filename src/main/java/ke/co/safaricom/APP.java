@@ -11,13 +11,13 @@ public class APP {
             System.out.println("Select process (e-encode/d-decode:");
             String process = userInputObject.nextLine();
 
-            System.out.println("Enter message:");
+            System.out.println("Enter Your message:");
             String msg = userInputObject.nextLine();
 
-            System.out.println("Enter key:");
+            System.out.println("Enter Any key: From 0-25");
             int key = userInputObject.nextInt();
 
-            System.out.println("Processing...");
+            System.out.println("Your Program is Processing...");
             System.out.println(process);
             if (process.startsWith("e")){
                 String output = Encoding.encode(msg, key);
