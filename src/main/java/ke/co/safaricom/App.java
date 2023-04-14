@@ -38,14 +38,15 @@ public class App {
             System.out.println("Select the Process: (e-encode/d-decode:");
             mainObject.setProcess(userInputObject.nextLine());
 
-            System.out.println("Input Your Message:for Encoding; THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
+            System.out.println("Input Your Message:for Encoding;eg THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
                     "Decoding; QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD");
             mainObject.setMessage(userInputObject.nextLine());
 
-            System.out.println("Input Any key: 23 for encoding and 3 for decoding");
+            System.out.println("Input Any key: From 0 - 25\n"
+                    + "eg 23 for encoding and decoding THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG");
             mainObject.setKey(userInputObject.nextInt());
 
-            System.out.println("Your Program is Processing...");
+            System.out.println("Your Ceaser Cipher Program is Processing...");
             System.out.println(mainObject.getProcess());
             if (mainObject.getProcess().startsWith("e")){
                 String output = Encoding.encode(mainObject.getMessage(), mainObject.getKey());
@@ -54,7 +55,7 @@ public class App {
                 String output = Decoding.decode(mainObject.getMessage(), mainObject.getKey());
                 System.out.println(output);
             } else {
-                System.out.println("Your process is Invalid");
+                System.out.println("Your Input process is Invalid");
                 continue;
             }
             System.out.println("Do you want to continue or quit the program");
