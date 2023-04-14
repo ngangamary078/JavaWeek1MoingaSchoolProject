@@ -38,11 +38,11 @@ public class App {
             System.out.println("Select the Process: (e-encode/d-decode:");
             mainObject.setProcess(userInputObject.nextLine());
 
-            System.out.println("Enter Your Message:for Encoding; THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
+            System.out.println("Input Your Message:for Encoding; THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG\n" +
                     "Decoding; QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD");
             mainObject.setMessage(userInputObject.nextLine());
 
-            System.out.println("Enter Any key: From 0 - 25; 23 for encoding and 3 for decoding");
+            System.out.println("Input Any key: 23 for encoding and 3 for decoding");
             mainObject.setKey(userInputObject.nextInt());
 
             System.out.println("Your Program is Processing...");
@@ -57,7 +57,7 @@ public class App {
                 System.out.println("Your process is Invalid");
                 continue;
             }
-            System.out.println("Do you want to quit or continue the program");
+            System.out.println("Do you want to continue or quit the program");
             userInputObject.nextLine();
             String nextStep = userInputObject.nextLine();
             if (nextStep.startsWith("q")){
